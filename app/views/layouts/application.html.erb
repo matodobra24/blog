@@ -10,49 +10,49 @@
     </head>
     <body>
       <header id="main_navigation" class="clearfix">
-        <a href="#" class="name">Johnathan Matodobra</a>
+      <%= link_to "Johnathan Matodobra", root_path, class: "name"%>        
           <nav>
             <%= link_to "Articles", posts_path %>
             <a href="#">Projects</a>
             <a href="#">Contact</a>
           </nav>
         </header>
-      <div class="wrapper wrapper_padding clearfix">
-        <div class="col-1 about homepage_content">
-          <h2>About</h2>
-          <hr>
-          <p>I'm a hobbyist who is interested in creating many kinds of different things. From working with microcontrollers, creating webpages (such as this one), to writing iPhone applications. I like to learn it all.</p>
-          <p>By day I work as a Paramedic, in my free time I work on many different projects.</p>
-          <p>You can continue to follow my blog right here, I will be writing about my experience building/designing my drone. If that works out I'll hopefully be writing some more stuff. Stay tuned!</p>
-        </div>
-        <div class="col-2 homepage_content">
-          <h2>Things I've written</h2>
-          <hr>
-          <h3><a href="#">Drone Philosophy</a></h3>
-          <p class="date">Today</p>
+        <%= yield %>
+      <!--<div class="wrapper wrapper_padding clearfix">-->
+      <!--  <div class="col-1 about homepage_content">-->
+      <!--    <h2>About</h2>-->
+      <!--    <hr>-->
+      <!--    <p>I'm a hobbyist who is interested in creating many kinds of different things. From working with microcontrollers, creating webpages (such as this one), to writing iPhone applications. I like to learn it all.</p>-->
+      <!--    <p>By day I work as a Paramedic, in my free time I work on many different projects.</p>-->
+      <!--    <p>You can continue to follow my blog right here, I will be writing about my experience building/designing my drone. If that works out I'll hopefully be writing some more stuff. Stay tuned!</p>-->
+      <!--  </div>-->
+      <!--  <div class="col-2 homepage_content">-->
+      <!--    <h2>Things I've written</h2>-->
+      <!--    <hr>-->
+      <!--    <h3><a href="#">Drone Philosophy</a></h3>-->
+      <!--    <p class="date">Today</p>-->
           
-          <h3><a href="#">Drone Parts</a></h3>
-          <p class="date">Yesterday</p>
-          <h3><a href="#">Drone Building</a></h3>
-          <p class="date">2 days ago</p>
-        </div>
-        <div class="col-3 homepage_content">
-           <h2>Things I've built</h2>
-          <hr>
-          <h3><a href="#">Drone Project</a></h3>
-          <p class="date">Yesterday</p>
-          <h3><a href="#">ROV Project</a></h3>
-          <p class="date">2 days ago</p>
-          <h3><a href="#">Swift Applications</a></h3>
-          <p class="date"></p>
-        </div>
-      </div>
+      <!--    <h3><a href="#">Drone Parts</a></h3>-->
+      <!--    <p class="date">Yesterday</p>-->
+      <!--    <h3><a href="#">Drone Building</a></h3>-->
+      <!--    <p class="date">2 days ago</p>-->
+      <!--  </div>-->
+      <!--  <div class="col-3 homepage_content">-->
+      <!--     <h2>Things I've built</h2>-->
+      <!--    <hr>-->
+      <!--    <h3><a href="#">Drone Project</a></h3>-->
+      <!--    <p class="date">Yesterday</p>-->
+      <!--    <h3><a href="#">ROV Project</a></h3>-->
+      <!--    <p class="date">2 days ago</p>-->
+      <!--    <h3><a href="#">Swift Applications</a></h3>-->
+      <!--    <p class="date"></p>-->
+      <!--  </div>-->
+      <!--</div>-->
       <footer id="main_footer">
         <p class="copyright">&copy;2016 Johnathan Matodobra</p>
         <nav>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-dribble"></i></a>
-          <a href="#"<i class="fa fa-facebook"></i>></a>
+          <a href="http://linkedin.com/matodobra24" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="http://facebook.com/matodobra24" target="_blank"><i class="fa fa-facebook"></i></a>
         </nav>
       </footer>
     </body>

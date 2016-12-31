@@ -1,0 +1,29 @@
+  <div class="wrapper wrapper_padding clearfix">
+        <div class="col-1 about homepage_content">
+          <h2>About</h2>
+          <hr>
+          <p>I'm a hobbyist who is interested in creating many kinds of different things. From working with microcontrollers, creating webpages (such as this one), to writing iPhone applications. I like to learn it all.</p>
+          <p>By day I work as a Paramedic, in my free time I work on many different projects.</p>
+          <p>You can continue to follow my blog right here, I will be writing about my experience building/designing my drone. If that works out I'll hopefully be writing some more stuff. Stay tuned!</p>
+        </div>
+        <div class="col-2 homepage_content">
+          <h2>Things I've written</h2>
+          <hr>
+          
+          
+          <% @posts.each do |post| %>
+          <h3><%= link_to post.title, post %></h3>
+          <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+          <% end %>
+        </div>
+        <div class="col-3 homepage_content">
+           <h2>Things I've built</h2>
+          <hr>
+          <h3><a href="#">Drone Project</a></h3>
+          <p class="date">Yesterday</p>
+          <h3><a href="#">ROV Project</a></h3>
+          <p class="date">2 days ago</p>
+          <h3><a href="#">Swift Applications</a></h3>
+          <p class="date"></p>
+        </div>
+      </div>
