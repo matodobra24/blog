@@ -1,10 +1,10 @@
 #post_wrapper {
-    padding; 3em 0;
+    padding: 3em 0;
     .post {
         
         text-align: center;
         .date {
-           font-size 0.9em;
+           font-size: 0.9em;
            margin: 0;
         }
         h2 {
@@ -85,7 +85,7 @@
         text-decoration: none;
         background: $white;
         font-weight: 700;
-        font-size; 0.7em;
+        font-size: 0.7em;
         font-style: normal;
         color: $dark;
         &:hover {
